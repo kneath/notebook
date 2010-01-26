@@ -28,17 +28,17 @@ So these two commands give you *why* the branch was created (commit messages) an
 
 We'd been talking about this in campfire for a while, but we were distracted by other issues.  One night I whipped up a quick & dirty comp in Photoshop:
 
-<div class="figure"><img src="/images/posts/code-review/initial_comp.gif" alt="Initial Comp" /></div>
+<div class="figure"><img src="http://warpspire.com/images/posts/code-review/initial_comp.gif" alt="Initial Comp" /></div>
 
 A day or so later, Scott slammed together some code that got the feature off the ground by listing the output of cherry.  Ryan hopped in and cleaned things up to get them to a usable state.  Pretty much at that point we launched the feature to admins only.  At a certain point, I realized that I was using it every day, so we cranked out some simple caching and [let the public in](http://github.com/sinatra/sinatra/compare/0.9.x...master) (assuming you know how to construct the URLs, this works everywhere)
 
-<div class="figure"><img src="/images/posts/code-review/compare_view_now.gif" alt="Compare View right now" /></div>
+<div class="figure"><img src="http://warpspire.com/images/posts/code-review/compare_view_now.gif" alt="Compare View right now" /></div>
 
 If you're ever planning out a big feature, I suggest you just start shipping bits of it.  This compare view is not what I had in mind for code review, and it's not complete, but it's a dart thrown in the right direction -- and most importantly it's the minimum viable product (launch early, launch often, even after you're launched).
 
 ## Brainstorm, dump & sketch it out
 
-<div class="figure right"><img src="/images/posts/code-review/ramblings.gif" alt="Ramblings" /></div>
+<div class="figure right"><img src="http://warpspire.com/images/posts/code-review/ramblings.gif" alt="Ramblings" /></div>
 
 I'm a big fan of talking your problems out.  So the past week I've been bugging everyone in campfire with endless messages about where to go with everything.  We even discussed in person quite a bit to figure out where we wanted to go.  After this I just started dumping out all my ideas to our wiki (see screenshot right).
 
