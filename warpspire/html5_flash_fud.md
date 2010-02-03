@@ -1,36 +1,35 @@
 # Let's make the web better
 
-I tried very hard to keep my mouth shut on this whole Flash vs the iPad thing.  But I decided that instead of arguing why we should or should not kill off Flash, I'd try to explain some of the modern challenges of "ditching flash" as it may be.
+I tried very hard to keep my mouth shut on this whole Flash vs the iPad thing.  But I decided that instead of arguing why we should or should not kill off Flash, I'd try to explain some of the modern challenges of "ditching flash" as it may be -- and why I think we're at least a decade off from being able to do so.
 
 ## Arguing against Flash is dumb
 
 You're probably wrong and at best it's unproductive.  Spend your time trying to make existing technologies a better alternative than Flash, don't sit around bashing Flash. You just look dumb.
 
-## So what problems are we trying to solve?
+## So what problem are we trying to solve?
 
-People say we should ditch Flash for HTML5.  This statement is terribly ambiguous, so we should remind ourselves what we want to replace:
+It's always a good idea to think about what problems you're trying to solve before you start proposing solutions.  On one hand: we have a miracle plugin (Flash) that has been responsible for almost all innovation on the web in the past decade (think about it: streaming video, scalable vectors, animation, persistent network connections -- Flash pioneered it all and at nearly 100% penetration). On the other hand: Flash is and always will be a second class citizen -- most importantly, less performant than native implementations.
 
-* Streaming video
-* Streaming audio
-* Scalable interfaces (pixel independent interfaces)
-* Animated vectors
-* Rich interfaces (for simplicity's sake, use flash games as an example)
+In past decade, we've seen the rise of viable alternatives to Flash under certain circumstances: long-polling AJAX connections, SVG, Canvas, leapfrogs in Javascript performance, etc.
 
-Unfortunately HTML5, as a specification does not solve any of these problems.  Luckily web developers and browser manufacturers learned long ago that the W3C is incompetent at best, so we *do* have some partial solutions.
+But it's important to note that we still don't have viable solutions for many problems: notably scalable interfaces and streaming video.  This is because **browser manufacturers have been extraordinarily lazy and the W3C is incapable of leading the web.**
 
 ### Streaming Video
 
-HTML5 does have a specification for a `<video>` element. Unfortunately W3C didn't have the balls to put browser manufacturers in their place, so there isn't a common video format.  This means that things like [YouTube's](http://youtube.com/html5) program really don't work hardly anywhere. Try loading it up in Firefox, or Chromium -- you'll notice none of it works.
+HTML5 does have a specification for a `<video>` element -- but without a common video format (ogg or h.264), this element is no more than a tech demo that works in very specific browser & OS combinations.
 
-We have to remember than h.264 is still proprietary (it isn't "open") -- so at the end of the day, we're just replacing one proprietary player (Flash Player) for another (Safari's or Google's).
-
-What's this mean in the long run? People on linux machines will likely never be able to see h.264 videos.  People on iPhones will be able to play videos, but people on Android phones will not (depending on what licensing the particular manufacturer ships with).
+At best, current `<video>` examples ([YouTube](http://youtube.com/html5), Vimeo) replace one proprietary player (Flash) with another (Safari). h.264 is no more open than FLV, and codecs cannot be implemented in open source browsers like Firefox and Chromium.
 
 To make the web better, **we need to have a standard streaming video solution that works in OSS browsers (Firefox, Chromium, Mobile Webkit) *and* proprietary browsers (Safari, Chrome).**
 
-### Streaming Audio
+Browser manufacturers seem unwilling to cooperate and the W3C seems incapable of creating a spec that provides a solution for the future.  The end result is a non-solution. There only path to the future that sees `<video>` replacing Flash is if one of the following scenarios plays out:
 
-My hope is that streaming audio is the one place that we can reliably ditch Flash in the next decade.  There aren't nearly as many licensing issues blocking us from accomplishing our goals.  So I think on the audio front, we're actually pretty good.
+1. Everyone in the world uses Safari/Chrome
+2. All video providers encode their videos at least twice and either:
+  * Internet Explorer usage drops close to 0%
+  * Internet Explorer chooses to implement `<video>` using h.264 or ogg
+
+I don't see this as a solution.
 
 ### Scalable interfaces
 
