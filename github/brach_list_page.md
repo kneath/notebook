@@ -1,17 +1,10 @@
 <!-- -*-Markdown-*- -->
 
-* Git Branches are awesome. Use to develop features or maintain releases.
-* Introduce new branch list page
-  * See all remote branches at a glance
-  * Divergence graph shows recency, amount of work
-  * Exposes compare view
-  * Change base of comparison
-
 # Branch Lists
 
 Git's branching model is one of it's best features.  Branches are cheap, fast and extremely flexible.  They're great for developing features, maintaining old releases, or just plain experimentation.
 
-If you spend a lot of time with git, you'll also find that there's a lot of really useful information to be discovered in the way git can compare various branches.  We're using this information to generate our new [branch list](http://github.com/merbjedi/mongomapper/branches/master) page.
+If you spend a lot of time with git, you'll also find that there's a lot of really useful information to be discovered in the way git can compare various branches.  We're using some of this information to generate our new [branch list](http://github.com/merbjedi/mongomapper/branches/master) page (you can get to this page from the 'Branch List' subnav item under Source).
 
 ### Check in on your topic branches in one glance
 
@@ -23,9 +16,15 @@ Each branch has what we call a divergence graph. On the left side of the black b
 
 In that one graphic, you get an idea of when the last time each branch was updated with master, how far along that branch is, and if people have been working on it recently.
 
+These graphs also have some implicit rules that can help when merging:
+
+* **No left side bar** - This branch is safe to merge with your base branch and there will not be any conflicts.
+* **No right side bar** - This branch has already been merged into your base branch, so it's probably ready to be deleted.
+* **Large left and right side bars** - This branch is probably going to be difficult to merge. There's a lot of unique commits in the branch and in your base branch so the likelihood of merge conflicts is much higher.
+
 ### Having fun with Rails releases
 
-This view can also be fun to glean some information out of Rails releases.  Rails keeps a branch for each point release.  If we take a look at the branches 2.2 as the base, we [get a pretty interesting page](http://github.com/rails/rails/branches/2-2-stable)
+This view can also be fun to glean some information out of Rails releases.  Rails keeps a branch for each point release.  If we take a look at the branches with 2.2 as the base, we [get a pretty interesting page](http://github.com/rails/rails/branches/2-2-stable)
 
 [![Rails Releases](http://share.kyleneath.com/captures/All_Branches_for_rails_s_rails_-_GitHub-20100226-184625.jpg)](http://github.com/rails/rails/branches/2-2-stable)
 
