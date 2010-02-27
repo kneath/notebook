@@ -12,7 +12,9 @@ It's always a good idea to think about what problems you're trying to solve befo
 
 In past decade, leaps in Javascript performance along with the rise of technologies like SVG, Canvas, and Ajax have offered opportunities to replace Flash under specific circumstances. Just for reference: I remember not five years ago Flash was *required* to fade an image.
 
-But it's important to note that we still don't have viable solutions for many problems: most notably streaming video.  This is because **browser manufacturers have been extraordinarily lazy and the W3C is incapable of leading the web.**
+But it's important to note that we still don't have viable solutions for many problems: most notably streaming video.  This is because browser manufacturers have been extraordinarily lazy and the W3C is incapable of leading the web.
+
+**If you bring up Flash advertisements as a problem, you are mentally challenged. Advertisers will use any and all technologies they can to annoy us -- Flash or not. Don't even try to bring this up. You're wrong.**
 
 ### Streaming Video
 
@@ -77,7 +79,7 @@ Just for a minute, imagine we lived in a magical world where browser manufacture
       background: gradient(linear, top, #006add, #00bbf0);
     }
 
-Sad part? I'm not even making up any syntax or browser features.  Just twenty minutes of collaboration between the Gecko and Webkit teams would have unified the syntax. Add in a little reality (The W3C will never ship a spec, don't expect them to) and you can drop all the proprietary `-webkit` and `-moz` bits.
+Sad part? I'm not even making up any syntax or browser features.  Just twenty minutes of collaboration between the Gecko and Webkit teams would have unified the syntax. Add in a little reality (the W3C will never ship a spec, don't expect them to) and you can drop all the proprietary `-webkit` and `-moz` bits.
 
 *Politics* have prevented making developers lives easier. No more, no less.
 
@@ -87,6 +89,8 @@ Just the other day I noticed that Chrome gives you upload progress when you uplo
 
 There's numerous other little bits where Flash is just way ahead -- clipboard integration, cross-domain requests, automatic upgrading, font embedding, image scaling... the list goes on and on. If Flash has been able to do these things as a **third party** -- why the hell haven't browser manufacturers done it?
 
+Of course the dirty little secret is the reason Flash has been able to push out features faster and more reliably is because they aren't encumbered by the W3C (the very organization that people think should save us!). You'd be wise to think about who you want to call savior in this battle.
+
 ### Take notice how important the internet is
 
 I'm not here to say that keeping up with Flash in a performant and reliable fashion is going to be easy for browser manufacturers. But let's face it: the internet is one of the most important things to happen to the human race in a long time.
@@ -95,8 +99,8 @@ Browser development is big money and big exposure.  The only browser developer I
 
 ## I want to say the future is bright...
 
-It's 2010 and I really wish I could look back at a post I wrote about HTML5 & CSS3 [back in 2007](http://warpspire.com/features/html5-css3/) and say I was wrong.  But here we are 2+ years later and the only difference is that instead of saying "iPhone" I should have said "iPhone and other devices to use MobileWebkit."
+It's 2010 and I really wish I could look back at a [post I wrote about HTML5 & CSS3 back in 2007](http://warpspire.com/features/html5-css3/) and say I was wrong.  But here we are 2+ years later and the only difference is that instead of saying "iPhone" I should have said "iPhone and other devices to use MobileWebkit."
 
-The bottom line: Flash is still the best tool for the job. The only way to replace Flash isn't to point out Flash's flaws, but rather to create tools that are a better option.
+The bottom line: Flash is still the best tool for the job. The only way to replace Flash isn't to point out Flash's flaws, but rather to create technologies that are a better option.
 
 If you give me a better option for streaming video that doesn't include "fuck *those* users" or "well it works on *my* machine" I'm happy to use it. But the truth is Flash has the best solution out there -- and I'll keep using it until it isn't.
