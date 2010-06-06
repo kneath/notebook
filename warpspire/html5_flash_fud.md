@@ -95,7 +95,7 @@ Of course the dirty little secret is the reason Flash has been able to push out 
 
 I'm not here to say that keeping up with Flash in a performant and reliable fashion is going to be easy for browser manufacturers. But let's face it: the internet is one of the most important things to happen to the human race in a long time.
 
-Browser development is big money and big exposure.  The only browser developer I know of that gets this is Google.  A little over a year into the game and they're *destroying* other manufacturers who have been around for more than a decade.  They get how important this is and they're doing something about it.
+Browser development is big money and big exposure.  The only browser developer I know of that gets this is Google.  A little over a year into the game and they're *destroying* other manufacturers who have been around for more than a decade.  They get how important this is and they're doing something about it.  Browser manufacturers need to step up their game in a major way.
 
 ## I want to say the future is bright...
 
